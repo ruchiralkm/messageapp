@@ -165,6 +165,7 @@ const ProfileUpdate = () => {
             {loading ? "Saving..." : "Save"}
           </motion.button>
         </form>
+
         <motion.img
           className="profile-pic"
           src={

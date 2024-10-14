@@ -66,11 +66,13 @@ function Login() {
         animate={{ scale: 1 }}
         transition={{ type: "spring", stiffness: 260, damping: 20 }}
       />
+
       <motion.form
         onSubmit={onSubmitHandler}
         className="login-form"
         variants={containerVariants}
       >
+        <h5>This application made testing purposes for only!</h5>
         <motion.h2 variants={itemVariants}>{currState}</motion.h2>
         <AnimatePresence mode="wait">
           {currState === "Sign up" && (
@@ -141,6 +143,9 @@ function Login() {
               </motion.span>
             </p>
           )}
+          <center>
+            <p className="designed">©2024 Designed by Ruchira Kaluarachchi</p>
+          </center>
         </motion.div>
       </motion.form>
     </motion.div>

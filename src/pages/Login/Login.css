@@ -11,19 +11,20 @@
 }
 .login-form {
   background: white;
-  padding: 20px 30px;
+  padding: 50px 80px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   border-radius: 10px;
+  box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.1);
 }
 .login-form h2 {
   font-weight: 500;
 }
 .form-input {
-  padding: 8px 10px;
+  padding: 14px 12px;
   border: 1px solid #c9c9c9;
-  border-radius: 4px;
+  border-radius: 8px;
   outline-color: #077eff;
 }
 .login-form button {
@@ -32,7 +33,7 @@
   color: white;
   font-size: 16px;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
 }
 .login-term {
@@ -54,4 +55,11 @@
   font-weight: 500;
   color: #077eff;
   cursor: pointer;
+}
+.designed {
+  margin-top: 10px;
+  font-size: 12px;
+}
+h5 {
+  color: red;
 }

@@ -4,6 +4,8 @@
   position: relative;
   height: 75vh;
   overflow-y: scroll;
+  border: none;
+  border-radius: 0px 20px 20px 0px;
 }
 .rs-profile {
   padding-top: 60px;
@@ -64,4 +66,9 @@
   padding: 10px 65px;
   border-radius: 20px;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.rs button:hover {
+  transform: translateX(-50%) scale(1.1);
 }

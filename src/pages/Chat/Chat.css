@@ -1,6 +1,6 @@
 .chat {
   min-height: 100vh;
-  background: linear-gradient(#595aff, #383699);
+  background: url(../../assets/background.png) no-repeat;
   display: grid;
   place-items: center;
 }
@@ -11,6 +11,8 @@
   background-color: aliceblue;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  border-radius: 20px;
+  border: none;
 }
 .loading {
   font-size: 50px;

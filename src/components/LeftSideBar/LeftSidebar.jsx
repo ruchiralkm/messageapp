@@ -113,9 +113,8 @@ const LeftSidebar = () => {
       setMessagesId(item.messageId);
       setChatUser(item);
 
-      // Fetch the current user's chats document
       const userChatsRef = doc(db, "chats", userData.id);
-      const userChatsSnapshot = await getDoc(userChatsRef); // Use getDoc to fetch a single document
+      const userChatsSnapshot = await getDoc(userChatsRef);
 
       if (userChatsSnapshot.exists()) {
         const userChatsData = userChatsSnapshot.data();
@@ -123,7 +122,6 @@ const LeftSidebar = () => {
           (c) => c.messageId === item.messageId
         );
 
-        // Update messageSeen flag
         if (chatIndex !== -1) {
           userChatsData.chatData[chatIndex].messageSeen = true;
           await updateDoc(userChatsRef, {
@@ -136,6 +134,12 @@ const LeftSidebar = () => {
     }
   };
 
+  const handleLogout = () => {
+    // Implement logout functionality here
+    console.log("Logout clicked");
+    // For example: auth.signOut().then(() => navigate('/login'));
+  };
+
   return (
     <div className="ls">
       <div className="ls-top">
@@ -146,7 +150,7 @@ const LeftSidebar = () => {
             <div className="sub-menu">
               <p onClick={() => navigate("/profile")}>Edit Profile</p>
               <hr />
-              <p>Logout</p>
+              <p onClick={() => navigate("/")}>Logout</p>
             </div>
           </div>
         </div>
