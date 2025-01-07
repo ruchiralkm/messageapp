@@ -13,12 +13,12 @@ import "react-toastify/dist/ReactToastify.css";
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCur7_zE5Y7Lh6EKg94YQ7is7Ju9iQdlws",
-  authDomain: "chat-app-gs-262d9.firebaseapp.com",
-  projectId: "chat-app-gs-262d9",
-  storageBucket: "chat-app-gs-262d9.appspot.com",
-  messagingSenderId: "504285833123",
-  appId: "1:504285833123:web:afa3ae70afb5c55d93dc16",
+  apiKey: "AIzaSyCC3xFagm0GFoCyS-8ch38V8Kri94t-b8s",
+  authDomain: "chat-app-gs-f521b.firebaseapp.com",
+  projectId: "chat-app-gs-f521b",
+  storageBucket: "chat-app-gs-f521b.firebasestorage.app",
+  messagingSenderId: "309709572630",
+  appId: "1:309709572630:web:aa11c723a3eac73e9bc337",
 };
 
 // Initialize Firebase
